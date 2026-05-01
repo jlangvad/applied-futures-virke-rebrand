@@ -1,0 +1,7 @@
+# Pin the public npm registry. The original bun.lock was generated inside
+# Anthropic's sandbox and resolved every package against the internal
+# Artifactory mirror — that broke external installs (Vercel et al.) with 401s.
+# This config keeps fresh `bun install` runs pointed at npmjs.
+
+[install]
+registry = "https://registry.npmjs.org/"
