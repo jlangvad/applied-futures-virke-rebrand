@@ -1,0 +1,175 @@
+/* Virke — section idioms shared by /identity and / */
+
+.virke-doc {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 56px;
+}
+@media (max-width: 780px) {
+  .virke-doc { padding: 0 24px; }
+}
+
+.virke-section {
+  padding: 96px 0;
+  border-bottom: 1px solid var(--ink);
+}
+.virke-section:last-of-type {
+  border-bottom: 0;
+}
+
+.virke-runhead {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 36px;
+}
+
+.virke-sec-head {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 40px;
+  margin-bottom: 56px;
+  align-items: baseline;
+}
+@media (max-width: 780px) {
+  .virke-sec-head {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.virke-sec-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: 14px;
+  line-height: 1.5;
+}
+
+.virke-sec-title {
+  font-family: Fraunces, Georgia, serif;
+  font-size: clamp(40px, 6vw, 76px);
+  line-height: 0.95;
+  letter-spacing: -0.025em;
+  font-weight: 400;
+  margin: 0;
+  color: var(--ink);
+}
+.virke-sec-title em {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.virke-sec-intro {
+  max-width: 680px;
+  margin-top: 20px;
+  font-family: Fraunces, Georgia, serif;
+  font-size: 19px;
+  line-height: 1.45;
+  color: var(--ink-2);
+  font-variation-settings: "opsz" 36;
+}
+
+.virke-subhead {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.virke-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.virke-grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.virke-grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+@media (max-width: 780px) {
+  .virke-grid2,
+  .virke-grid3,
+  .virke-grid4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.virke-callout {
+  border: 1px solid var(--ink);
+  padding: 28px 32px;
+}
+.virke-callout.inverse {
+  background: var(--ink);
+  color: var(--paper);
+}
+.virke-callout.inverse p {
+  color: rgba(236, 233, 224, 0.8);
+}
+
+.virke-lede {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 20px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.virke-cta {
+  display: inline-block;
+  padding: 14px 22px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  border: 1px solid var(--ink);
+}
+.virke-cta.solid {
+  background: var(--ink);
+  color: var(--paper);
+}
+.virke-cta.outline {
+  background: transparent;
+  color: var(--ink);
+}
+.virke-cta:hover {
+  background: var(--accent);
+  color: var(--paper);
+  border-color: var(--accent);
+}
+
+.virke-mono-meta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.virke-prose {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ink-2);
+  max-width: 56ch;
+}
+.virke-prose em {
+  font-style: italic;
+  color: var(--ink);
+}

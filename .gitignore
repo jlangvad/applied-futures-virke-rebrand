@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+*.tsbuildinfo
+
+# tsc emits these next to vite.config.ts when composite: true; we don't want them tracked
+vite.config.js
+vite.config.d.ts
+
+# Vite cache (we relocate it to ./.vite so it stays inside the project — see vite.config.ts)
+.vite/
+
+# macOS
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.idea/
+.vscode/
+
+# Lockfile policy: this project pins bun@1.3.6 via packageManager.
+# bun.lock is canonical; npm/pnpm lockfiles are local-only.
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
